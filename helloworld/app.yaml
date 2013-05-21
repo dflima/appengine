@@ -1,0 +1,14 @@
+application: dpluslengine
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /users
+  script: user.php
+
+- url: /.*
+  script: helloworld.php
